@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevLog - Interactive Blog Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Dev<span>Log</span></div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home" class="nav-item active">Home</a></li>
+            <li><a href="#blogs" class="nav-item">Blog</a></li>
+            <li><a href="#about" class="nav-item">About</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Home Section / Hero -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to DevLog</h1>
+            <p>Sharing insights on Web Development, Artificial Intelligence, and Modern Technologies.</p>
+            <a href="#blogs" class="cta-btn">Explore Blogs</a>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blogs" class="blog-section">
+        <div class="section-title">
+            <h2>Latest Blog Posts</h2>
+            <p>Read our latest articles and share your thoughts</p>
+        </div>
+        <div class="blog-grid" id="blog-grid">
+            <!-- Blog posts will be dynamically loaded via JavaScript -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h2>About DevLog</h2>
+            <p>DevLog is a platform built as part of the SAM AI Technologies internship. We aim to share clean, informative, and engaging content about modern web development practices, coding tutorials, and tech innovations.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2>Get In Touch</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 DevLog | SAM AI Technologies Web Development Internship</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
